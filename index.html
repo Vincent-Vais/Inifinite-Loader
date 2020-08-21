@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinte Scroll</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/20348decd9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Title -->
+    <div class="container">
+      <h1>Unsplash API - Infinte Scroll</h1>
+    </div>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+      <img src="img/loader.svg" />
+    </div>
+    <!-- Img Container -->
+    <div class="container">
+      <div class="image-grid" id="image-container">
+        <!-- <div class="grid-1">
+          <div class="grid-item grid-a">
+            <div class="front">
+              <img
+                src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              />
+            </div>
+            <div class="back">
+              <div class="bio">
+                <div class="bio__image">
+                  <img
+                    src="https://images.unsplash.com/profile-1588795434860-25ae17ec4249image?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64"
+                  />
+                </div>
+                <div class="bio__text">
+                  <h3>Wassim Chouak</h3>
+                  <p>
+                    Instagram @itswasso_ ↵17 , hope you enjoy my shots. tag me
+                    if you post my photos on your instagram :)
+                  </p>
+                  <h4><i class="fas fa-globe-americas fa-2x"></i>Italy</h4>
+                </div>
+              </div>
+              <div class="stats">
+                <div class="social">
+                  <a href="https://unsplash.com/@wassoph"
+                    ><i class="fab fa-unsplash"></i
+                  ></a>
+                  <a href="https://www.instagram.com/itswasso_/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="https://www.instagram.com/itswasso_/"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+                <div class="stats-photos">
+                  <h4><i class="fas fa-images"></i>250</h4>
+                  <h4><i class="far fa-thumbs-up"></i>11</h4>
+                  <h4><i class="fas fa-download"></i>87220</h4>
+                </div>
+              </div>
+              <div class="back-loader">
+                <img src="./img/back-loader.svg">
+              </div>
+            </div>
+            <div class="popper">
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="grid-item grid-b">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+            <div class="popper">
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="grid-item grid-c">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-d">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-e">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-f">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-g">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="grid-item grid-a">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-b">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-c">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-d">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-e">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-f">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-g">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="grid-item grid-a">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-b">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-c">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-d">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-e">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-f">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="grid-item grid-g">
+            <img
+              src="https://images.unsplash.com/photo-1596474582331-aae321e8f0e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
